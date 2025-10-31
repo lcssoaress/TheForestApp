@@ -65,41 +65,29 @@
         android:layout_marginTop="20sp"
         android:gravity="center_horizontal">
 
+
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnentrar"
-            android:layout_width="100sp"
-            android:layout_height="40sp"
-            android:layout_marginRight="20sp"
-            android:text="Login" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnsair"
-
-            android:layout_width="100sp"
-            android:layout_height="40sp"
-            android:layout_toEndOf="@+id/btnentrar"
-            android:text="Sign in" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnsendcode"
             android:layout_width="100sp"
             android:layout_height="40sp"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20sp"
             android:backgroundTint="#043915"
-            android:text="Send"
+            android:text="Login"
             android:textColor="#000"
             android:textSize="16sp"
             app:cornerRadius="6sp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnsendcode"
+            android:id="@+id/btnsair"
             android:layout_width="100sp"
+            android:layout_toEndOf="@+id/btnentrar"
             android:layout_height="40sp"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20sp"
             android:backgroundTint="#043915"
-            android:text="Send"
+            android:text="Sign in"
             android:textColor="#000"
             android:textSize="16sp"
             app:cornerRadius="6sp" />
