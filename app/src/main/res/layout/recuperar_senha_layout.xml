@@ -10,15 +10,17 @@
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
+    <rela
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180sp"
-        android:text="Join The Forest"
-        android:textAlignment="center"
-        android:textColor="#646E34"
-        android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180sp"
+            android:text="Join The Forest"
+            android:textAlignment="center"
+            android:textColor="#646E34"
+            android:textSize="20sp" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -39,10 +41,14 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnsendpass"
+        android:backgroundTint="#043915"
+        android:textColor="#000"
         app:cornerRadius="6sp"
-        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:textSize="16sp"
         android:layout_width="100sp"
         android:layout_height="40sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
         android:text="Send" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -64,8 +70,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnsendcode"
-        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:backgroundTint="#043915"
+        android:textColor="#000"
         app:cornerRadius="6sp"
+        android:textSize="16sp"
         android:layout_width="100sp"
         android:layout_height="40sp"
         android:layout_marginLeft="20sp"
