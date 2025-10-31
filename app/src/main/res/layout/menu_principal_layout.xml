@@ -5,12 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/MenuFundo"
+    android:orientation="vertical"
     tools:context=".MenuPrincipalActivity">
 
     <RelativeLayout
-        android:layout_width=""
-        android:layout_height=""
-    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mat"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="100sp"
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/weapons"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="100sp"
+            android:layout_toRightOf="@+id/mat"
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/weapons"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="100sp"
+            android:layout_toRightOf="@+id/mat"
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/weapons"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="100sp"
+            android:layout_toRightOf="@+id/mat"
+    </RelativeLayout>
+
 </LinearLayout>
