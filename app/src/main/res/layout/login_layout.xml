@@ -12,9 +12,9 @@
 
 
     <TextView
-        android:layout_marginTop="180sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="180sp"
         android:text="Join The Forest"
         android:textAlignment="center"
         android:textColor="#646E34"
@@ -24,9 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        app:boxBackgroundColor="#646E34"
+        android:gravity="center"
         android:textColorHint="#000"
-        android:gravity="center">
+        app:boxBackgroundColor="#646E34">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="300sp"
@@ -39,9 +39,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        app:boxBackgroundColor="#646E34"
+        android:gravity="center"
         android:textColorHint="#000"
-        android:gravity="center">
+        app:boxBackgroundColor="#646E34">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="300sp"
@@ -54,23 +54,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#646E34"
         android:text="Forgot Your Password? Click Here..."
         android:textAlignment="center"
+        android:textColor="#646E34"
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20sp">
+        android:layout_marginTop="20sp"
+        android:gravity="center_horizontal">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnentrar"
             android:layout_width="100sp"
             android:layout_height="40sp"
             android:layout_marginRight="20sp"
-            android:text="Login"/>
+            android:text="Login" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnsair"
@@ -78,10 +78,35 @@
             android:layout_width="100sp"
             android:layout_height="40sp"
             android:layout_toEndOf="@+id/btnentrar"
-            android:text="Sign in"/>
+            android:text="Sign in" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnsendcode"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#043915"
+            android:text="Send"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:cornerRadius="6sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnsendcode"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#043915"
+            android:text="Send"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:cornerRadius="6sp" />
 
 
     </RelativeLayout>
+
     <ImageView
         android:layout_width="150sp"
         android:layout_height="150sp"

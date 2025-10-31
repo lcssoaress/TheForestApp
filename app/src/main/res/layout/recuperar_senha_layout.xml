@@ -16,15 +16,17 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnsendpass"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="172sp"
+            android:background="@drawable/baseline_arrow_back_24"
             android:backgroundTint="#043915"
+            android:textAlignment="center"
             android:textColor="#000"
-            app:cornerRadius="6sp"
-            android:textSize="16sp"
-            android:layout_width="100sp"
-            android:layout_height="40sp"
-            android:layout_marginTop="180sp"
+            android:textSize="20sp"
+            app:cornerRadius="100sp" />
 
-            android:text="Send" />
         <TextView
             android:id="@+id/txttheforest"
             android:layout_width="match_parent"
@@ -35,7 +37,6 @@
             android:textColor="#646E34"
             android:textSize="20sp" />
     </RelativeLayout>
-
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -57,15 +58,15 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnsendpass"
-        android:backgroundTint="#043915"
-        android:textColor="#000"
-        app:cornerRadius="6sp"
-        android:textSize="16sp"
         android:layout_width="100sp"
         android:layout_height="40sp"
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
-        android:text="Send" />
+        android:backgroundTint="#043915"
+        android:text="Send"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:cornerRadius="6sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -86,15 +87,15 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnsendcode"
-        android:backgroundTint="#043915"
-        android:textColor="#000"
-        app:cornerRadius="6sp"
-        android:textSize="16sp"
         android:layout_width="100sp"
         android:layout_height="40sp"
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
-        android:text="Send" />
+        android:backgroundTint="#043915"
+        android:text="Send"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:cornerRadius="6sp" />
 
     <ImageView
         android:layout_width="150sp"

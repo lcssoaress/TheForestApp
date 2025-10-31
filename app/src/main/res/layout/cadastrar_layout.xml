@@ -11,14 +11,33 @@
     tools:context=".SplashActivity">
 
 
-    <TextView
-        android:layout_marginTop="180sp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Join The Forest"
-        android:textAlignment="center"
-        android:textColor="#646E34"
-        android:textSize="20sp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnsendpass"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="172sp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="#043915"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="100sp" />
+
+        <TextView
+            android:id="@+id/txttheforest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180sp"
+            android:text="Join The Forest"
+            android:textAlignment="center"
+            android:textColor="#646E34"
+            android:textSize="20sp" />
+    </RelativeLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -57,19 +76,19 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="20sp">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnvoltar"
-            android:layout_width="100sp"
-            android:layout_height="40sp"
-            android:layout_marginRight="20sp"
-            android:text="<-"/>
+
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnsignin"
+            android:id="@+id/btnsendcode"
             android:layout_width="100sp"
             android:layout_height="40sp"
-            android:layout_toEndOf="@+id/btnvoltar"
-            android:text="Sign in"/>
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#043915"
+            android:text="Sign in"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:cornerRadius="6sp" />
 
 
     </RelativeLayout>
