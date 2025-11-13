@@ -11,16 +11,19 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical">
+
+
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/mat"
+            android:id="@+id/materials"
 
-            app:cardCornerRadius="25sp"
+            app:cardCornerRadius="10sp"
             app:cardBackgroundColor="#fff"
             android:layout_width="300sp"
             android:layout_height="75sp"
-            android:layout_marginLeft="30sp"
+
             android:layout_marginTop="100sp"
             <ImageView
                 android:layout_width="150sp"
@@ -28,53 +31,61 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/weapons"
-            app:cardCornerRadius="25sp"
-            app:cardBackgroundColor="#000"
+            app:cardCornerRadius="10sp"
+            app:cardBackgroundColor="#fff"
             android:layout_width="300sp"
             android:layout_height="75sp"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="100sp"
-            android:layout_below="@+id/mat"
+
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/materials"
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/enemies"
-            app:cardCornerRadius="25sp"
-            app:cardBackgroundColor="#000"
+            app:cardCornerRadius="10sp"
+            app:cardBackgroundColor="#fff"
             android:layout_width="300sp"
             android:layout_height="75sp"
             android:layout_below="@+id/weapons"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="70sp"
+
+            android:layout_marginTop="20sp"
 
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/build"
-            app:cardCornerRadius="25sp"
-            app:cardBackgroundColor="#000"
+            android:id="@+id/buildings"
+            app:cardCornerRadius="10sp"
+            app:cardBackgroundColor="#fff"
             android:layout_width="300sp"
             android:layout_height="75sp"
             android:layout_below="@+id/enemies"
-            android:layout_marginLeft="20sp"
-            android:layout_marginTop="70sp"
+            android:layout_marginTop="20sp"
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tools"
             android:layout_width="300sp"
             android:layout_height="75sp"
-            app:cardCornerRadius="25sp"
-            app:cardBackgroundColor="#000"
-            android:layout_below="@+id/buil"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="70sp"
-            android:layout_toRightOf="@+id/mat"
+            app:cardCornerRadius="10sp"
+            app:cardBackgroundColor="#fff"
+            android:layout_below="@+id/buildings"
+            android:layout_marginTop="20sp"
+
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            app:cardCornerRadius="25sp"
-            app:cardBackgroundColor="#000"
-            android:layout_below="@+id/buil"
-            android:layout_marginLeft="20sp"
-            android:layout_marginTop="70sp"
+            android:id="@+id/locations"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            app:cardCornerRadius="10sp"
+            app:cardBackgroundColor="#fff"
+            android:layout_below="@+id/tools"
+            android:layout_marginTop="20sp"
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/upgrades"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/locations"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp"
     </RelativeLayout>
 
 </LinearLayout>
