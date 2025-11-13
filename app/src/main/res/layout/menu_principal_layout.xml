@@ -9,83 +9,116 @@
     android:orientation="vertical"
     tools:context=".MenuPrincipalActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materials"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#fff"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+        android:layout_marginTop="100sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/materials"
-
-            app:cardCornerRadius="10sp"
-            app:cardBackgroundColor="#fff"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-
-            android:layout_marginTop="100sp"
             <ImageView
-                android:layout_width="150sp"
-                android:layout_height="150sp"
+                android:layout_width="50sp"
+                android:layout_height="75sp"
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/weapons"
-            app:cardCornerRadius="10sp"
-            app:cardBackgroundColor="#fff"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-
-            android:layout_marginTop="20sp"
-            android:layout_below="@+id/materials"
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/enemies"
-            app:cardCornerRadius="10sp"
-            app:cardBackgroundColor="#fff"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-            android:layout_below="@+id/weapons"
-
-            android:layout_marginTop="20sp"
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/buildings"
-            app:cardCornerRadius="10sp"
-            app:cardBackgroundColor="#fff"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-            android:layout_below="@+id/enemies"
-            android:layout_marginTop="20sp"
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/tools"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-            app:cardCornerRadius="10sp"
-            app:cardBackgroundColor="#fff"
-            android:layout_below="@+id/buildings"
-            android:layout_marginTop="20sp"
 
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/locations"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-            app:cardCornerRadius="10sp"
-            app:cardBackgroundColor="#fff"
-            android:layout_below="@+id/tools"
-            android:layout_marginTop="20sp"
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/upgrades"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-            android:layout_below="@+id/locations"
-            android:layout_marginTop="20sp"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="10sp"
-    </RelativeLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/weapons"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#fff"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/materials">
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/enemies"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#fff"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+        android:layout_below="@+id/weapons"
+
+        android:layout_marginTop="20sp">
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buildings"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#fff"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+        android:layout_below="@+id/enemies"
+        android:layout_marginTop="20sp">
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tools"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#fff"
+        android:layout_below="@+id/buildings"
+        android:layout_marginTop="20sp">
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/locations"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#fff"
+        android:layout_below="@+id/tools"
+        android:layout_marginTop="20sp">
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/upgrades"
+        android:layout_width="300sp"
+        android:layout_height="75sp"
+        android:layout_below="@+id/locations"
+        android:layout_marginTop="20sp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="10sp">
+
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+
+
+
 
 </LinearLayout>
