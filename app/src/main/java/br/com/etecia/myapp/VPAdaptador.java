@@ -13,11 +13,15 @@ public class VPAdaptador extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        switch ()
+        switch (position) {
+            case 0: return new MaterialsFragment();
+            case 1: return new WeaponsFragment();
+            default:return new WeaponsFragment();
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 6;
+        return 1;
     }
 }
