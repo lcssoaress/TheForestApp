@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300sp"
+    android:id="@+id/cardweapon"
     android:layout_height="75sp"
-    android:background=""
+    android:background="@drawable/cardweapon"
     >
     <ImageView
         android:layout_gravity="right"
