@@ -10,118 +10,117 @@
     tools:context=".MenuPrincipalActivity">
 
 
-<LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/Listaitems"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materials"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_marginTop="100sp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materials"
-        app:cardCornerRadius="10sp"
-        app:cardBackgroundColor="#fff"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
-        android:layout_marginTop="100sp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-<TextView
-    android:layout_width="150sp"
-    android:layout_height="wrap_content"
-            <ImageView
-                android:layout_width="70sp"
-                android:layout_height="75sp"
-android:scaleType="centerCrop"
-                android:src="@drawable/axe"
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+
+                <ImageView
+                    android:layout_width="70sp"
+                    android:layout_height="75sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/axe"
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/weapons"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/materials"
+            android:layout_marginTop="20sp"
+
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp">
 
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/weapons"
-        app:cardCornerRadius="10sp"
-        app:cardBackgroundColor="#fff"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
+        </com.google.android.material.card.MaterialCardView>
 
-        android:layout_marginTop="20sp"
-        android:layout_below="@+id/materials">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/enemies"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/weapons"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="#fff"
 
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/enemies"
-        app:cardCornerRadius="10sp"
-        app:cardBackgroundColor="#fff"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
-        android:layout_below="@+id/weapons"
-
-        android:layout_marginTop="20sp">
+            app:cardCornerRadius="10sp">
 
 
-    </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/buildings"
-        app:cardCornerRadius="10sp"
-        app:cardBackgroundColor="#fff"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
-        android:layout_below="@+id/enemies"
-        android:layout_marginTop="20sp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/buildings"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/enemies"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp">
 
 
-    </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/tools"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
-        app:cardCornerRadius="10sp"
-        app:cardBackgroundColor="#fff"
-        android:layout_below="@+id/buildings"
-        android:layout_marginTop="20sp">
-
-
-    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tools"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/buildings"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp">
 
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/locations"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
-        app:cardCornerRadius="10sp"
-        app:cardBackgroundColor="#fff"
-        android:layout_below="@+id/tools"
-        android:layout_marginTop="20sp">
+        </com.google.android.material.card.MaterialCardView>
 
 
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/upgrades"
-        android:layout_width="300sp"
-        android:layout_height="75sp"
-        android:layout_below="@+id/locations"
-        android:layout_marginTop="20sp"
-        app:cardBackgroundColor="#fff"
-        app:cardCornerRadius="10sp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/locations"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/tools"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp">
 
 
-    </com.google.android.material.card.MaterialCardView>
-</LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/upgrades"
+            android:layout_width="300sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/locations"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10sp">
 
 
-
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
 
 
 </LinearLayout>
