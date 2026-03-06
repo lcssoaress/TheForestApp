@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/forest"
+    android:background="@drawable/menuPrincipalvdd"
     android:orientation="vertical"
     tools:context=".MenuPrincipalActivity">
 
@@ -23,23 +23,14 @@
             android:layout_width="300sp"
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
-            app:cardBackgroundColor="#FFFFFF"
+            app:cardBackgroundColor="#E0C200"
             app:cardCornerRadius="10sp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-
-                <ImageView
-                    android:layout_width="70sp"
-                    android:layout_height="75sp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/axe"
+                android:layout_width="300sp"
+                android:layout_height="75sp"
+                android:orientation="horizontal"
+                android:background="@drawable/card1">
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -108,17 +99,7 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/upgrades"
-            android:layout_width="300sp"
-            android:layout_height="75sp"
-            android:layout_below="@+id/locations"
-            android:layout_marginTop="20sp"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="10sp">
 
-
-        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
 
