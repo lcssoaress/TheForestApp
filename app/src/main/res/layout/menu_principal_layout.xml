@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/MenuFundo"
+    android:background="@drawable/forest"
     android:orientation="vertical"
     tools:context=".MenuPrincipalActivity">
 
@@ -15,16 +15,15 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/Listaitems"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/materials"
             android:layout_width="300sp"
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="10sp">
 
             <LinearLayout
